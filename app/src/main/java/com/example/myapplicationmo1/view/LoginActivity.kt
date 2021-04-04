@@ -46,7 +46,8 @@ class LoginActivity : AppCompatActivity() {
                     saveFullName(fullName)
                     saveLoginState()
                 }else{
-                      val toast = Toast.makeText(this@LoginActivity,"Full name and User name Required",Toast.LENGTH_SHORT)
+                      val toast = Toast.makeText(this@LoginActivity,"Full name and User name Required",
+                              Toast.LENGTH_SHORT)
                     toast.show()
                 }
             }
