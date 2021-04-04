@@ -9,16 +9,15 @@
     <TextView
         android:id="@+id/welcome"
         android:layout_width="match_parent"
-        android:text="@string/welcome"
-        android:textStyle="bold"
-        android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:layout_marginTop="24dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        tools:ignore="MissingConstraints" />
+        android:text="@string/welcome"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="26dp" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
@@ -87,13 +86,14 @@
         android:id="@+id/imageView6"
         android:layout_width="207dp"
         android:layout_height="183dp"
+        android:background="@drawable/ic_book"
+        android:contentDescription="@string/todo5"
         app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/welcome"
-        app:srcCompat="@drawable/ic_coronavirus"
-        tools:ignore="VectorDrawableCompat"
-        android:contentDescription="@string/todo5" />
+        app:layout_constraintVertical_bias="0.522"
+        tools:ignore="VectorDrawableCompat" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
